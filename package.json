@@ -1,6 +1,6 @@
 {
-  "name": "party-parrot",
-  "version": "1.0.0",
+  "name": "party-parrots",
+  "version": "1.0.1",
   "description": "Generate parrots based on images",
   "main": "./src/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "parrot",
-    "partyparrot"
+    "partyparrot",
+    "party"
   ],
   "author": "Exan",
   "license": "ISC",
