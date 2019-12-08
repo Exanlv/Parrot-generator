@@ -1,5 +1,5 @@
 {
-  "name": "parrot_generator",
+  "name": "party-parrot",
   "version": "1.0.0",
   "description": "Generate parrots based on images",
   "main": "./src/index.js",
