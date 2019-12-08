@@ -4,7 +4,7 @@ import { resizing } from './img-sizing/resizing';
 import { readFileSync, writeFileSync } from 'fs';
 import { GifFrame, GifUtil, GifCodec, Gif } from 'gifwrap';
 
-const cutoutData: Array<Array<{['x']: number, ['y']: number}>> = JSON.parse(String(readFileSync(`${__dirname}/data.json`)));
+const cutoutData: Array<Array<{['x']: number, ['y']: number}>> = JSON.parse(String(readFileSync(`${__dirname}/img-sizing/data.json`)));
 
 export async function createParrot(source, speed = 4): Promise<ParrotGif> {
     const image = await read(source);
@@ -45,7 +45,3 @@ export class ParrotGif {
         writeFileSync(path, this.gif.buffer);
     }
 }
-
-createParrot('https://cdn.discordapp.com/attachments/530540966097059840/650035739018526833/JPEG_20191123_173717.jpg', 3).then((parrotGif) => {
-    parrotGif.save('whatever.gif');
-});
